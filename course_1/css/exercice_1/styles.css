@@ -1,0 +1,27 @@
+h1 {
+  color: grey;
+}
+
+p{
+  font-size: 0.6rem;
+}
+
+.highlight {
+  background-color: yellow;
+}
+
+#main-title {
+  color: red;
+}
+
+ul {
+  list-style: square;
+}
+
+li{
+  color: green;
+}
+
+div{
+  background-color: grey;
+}
