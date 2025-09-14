@@ -1,0 +1,15 @@
+.outstanding li {
+  list-style: square;
+}
+
+.finished {
+  text-decoration: line-through;
+}
+
+h2 {
+  font-family: "Gill Sans", sans-serif;
+}
+
+li {
+  font-family: "Gill Sans", sans-serif;
+}
