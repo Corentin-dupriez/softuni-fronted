@@ -1,0 +1,58 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+}
+
+
+article {
+  border-radius: 10px;
+  width: 30%;
+  margin: auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Arial", sans-serif;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+}
+
+.imgContainer {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.imgContainer img{
+  width: 100%;
+}
+
+.desc {
+  margin: 0px 30px 30px 30px; 
+}
+
+.desc h2 {
+  margin-bottom: 15px;
+  color: #333333;
+}
+
+.desc p {
+  margin-bottom: 30px;
+  color: #333333;
+}
+
+.desc a span {
+  font-weight: bold;
+  font-style: none;
+}
+
+.desc a {
+  text-decoration: none;
+  color: #333333;
+  font-style: italic;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  max-width: 100%;
+}
+
+
