@@ -1,0 +1,27 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.accordion {
+  border: 1px solid #ddd;
+  margin: 20px;
+}
+
+details {
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+details:last-child {
+  border-bottom: none;
+}
+
+summary {
+  font-weight: bold;
+}
+
+p {
+  margin: 15px 0;
+}
