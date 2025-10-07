@@ -1,0 +1,92 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+html { 
+background-color: lightgray;
+font-family: "Arial", sans-serif;
+padding: 0;
+}
+
+body { 
+background-color: white;
+margin: 5px;
+border-radius: 10px;
+}
+
+.banner {
+  padding: 0.5rem;
+}
+
+.bannerContent{
+  margin: 1.5rem;
+}
+
+.imgHolder {
+  height: 120px;
+  background-color: lightgray;
+  border: 1px solid gray;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+}
+
+.headers, 
+.description{
+  margin-bottom: 1rem;
+}
+
+.smallHeader {
+  color: gray;
+  font-size: 1.3rem;
+}
+
+
+.bigHeader {
+  font-size: 2rem;
+}
+
+.description {
+  color: gray;
+  margin-bottom: 1.7rem;
+}
+
+
+.button {
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+}
+
+.mainButton {
+  background-color: purple;
+  color: white;
+  margin-right: 0.5rem;
+}
+
+.secondaryButton {
+  background-color: lightgray; 
+  color: gray;
+}
+
+@media screen and (min-width: 800px) {
+ .bannerContent {
+   display: flex;
+   flex-direction: row-reverse;
+ } 
+
+ .imgHolder {
+    height: 230px;
+    width: 600px;
+    margin-bottom: 0;
+ }
+
+ .description {
+   margin-right: 2rem;
+ }
+}
+
+

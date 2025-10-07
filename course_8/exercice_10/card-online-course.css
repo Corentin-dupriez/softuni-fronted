@@ -1,0 +1,38 @@
+*, *::before, *::after{ 
+  box-sizing: border-box; 
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Arial", "Helvetica", sans-serif;
+}
+
+.productCard {
+  margin: 10px;
+  border-radius: 3px;
+  border: 1px solid lightgray;
+  width: 33%;
+  background-color: #EEEEEE;
+  box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.05);
+}
+
+.imgHolder {
+  padding: 10px;
+}
+
+.imgHolder img {
+  width: 100%;
+  border-radius: 3px;
+}
+
+.courseDescription {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.05);
+
+}
+
+.avatar {
+  border-radius: 100%;
+}

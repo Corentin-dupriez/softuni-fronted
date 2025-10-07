@@ -1,0 +1,11 @@
+@import 'reset.css';
+@import 'typography.css';
+
+section {
+  margin: 2rem auto;
+  max-width: 800px;
+  background: lightgray;
+  border: 1px solid gray;
+  padding: 2rem;
+  border-radius: 10px;
+}

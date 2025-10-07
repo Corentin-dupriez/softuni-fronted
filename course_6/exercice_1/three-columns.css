@@ -1,0 +1,38 @@
+.laws-container {
+  display: flex;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  align-items: center; 
+  margin: 10%;
+}
+
+.description {
+  color: #555555;
+  text-align: center;
+}
+
+.top-text {
+  font-style: italic;
+}
+
+.bottom-text {
+  margin: 5% 15%;
+}
+
+.quote {
+  font-style: italic; 
+}
+
+.law p {
+  margin-top: 0;
+}
+
+.law h4 {
+  margin-bottom: 2px;
+}
