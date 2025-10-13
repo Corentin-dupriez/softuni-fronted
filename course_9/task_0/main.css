@@ -1,11 +1,104 @@
 @import 'reset.css';
 @import 'typography.css';
 
+:root {
+  --form-bg: #f7fafd;
+  --form-border: #b3c2d1;
+  --form-focus: #4a90e2;
+  --form-label: #2d3a4b;
+  --form-input-bg: #ffffff;
+  --form-input-text: #1a232f;
+  --form-placeholder: #8ca0b3;
+  --form-error: #e74c3c;
+  --form-success: #27ae60;
+}
+
 section {
   margin: 2rem auto;
   max-width: 800px;
   background: lightgray;
   border: 1px solid gray;
   padding: 2rem;
-  border-radius: 10px;
+  border-radius: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: start;
+  background-color: var(--form-bg);
+  border: 1px solid var(--form-border);
+  padding: 1rem;
+}
+
+.formRow > * {
+  display: block;
+  width: 100%;
+}
+
+
+input, 
+select {
+  background-color: var(--form-input-bg);
+  color: var(--form-input-text);
+  border: 1px solid var(--form-border);
+  font-size: 1rem;
+  padding: 0.25rem 1rem;
+  border-radius: 0.25rem;
+}
+
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible{
+  outline: 2px solid var(--form-focus);
+}
+
+textarea {
+  resize: none;
+}
+
+option {
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0.25rem 0px;
+  text-align: center;
+}
+
+select {
+  min-width: 200px;
+}
+
+button {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  border: 1px solid var(--form-focus);
+  color: var(--form-focus);
+  background-color: var(--form-bg);
+  cursor: pointer;
+}
+
+button.primary {
+  color: var(--form-bg);
+  background-color: var(--form-focus);
+}
+
+fieldset {
+  padding: 1rem;
+  border-color: var(--form-border);
+  border-radius: 0.25rem;
+}
+
+fieldset legend {
+  background-color: var(--form-focus);
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  color: var(--form-bg);
+}
+
+label.check {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
 }

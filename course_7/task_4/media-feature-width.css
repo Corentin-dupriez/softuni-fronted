@@ -23,16 +23,23 @@ body::before {
   border-radius: 0.3em;
 }
 
-@media print {
+@media (width: 800px) {
 body::before {
-    display: block;
-    content: 'The page is using a print preview or it was printed';
+display: block;
+content: 'The viewport width is exactly 800px';
 }
-}
+} 
 
-@media screen {
+@media (min-width: 800px) {
 body::before {
-    display: block;
-    content: 'The page is being shown on a screen';
+display: block;
+content: 'The viewport width is larger than 800px';
 }
+}  
+
+@media (max-width: 800px) {
+body::before {
+display: block;
+content: 'The viewport width is smaller than 800px';
 }
+} 

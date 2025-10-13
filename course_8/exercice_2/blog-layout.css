@@ -28,9 +28,16 @@ header .mainTitle {
   padding: 2rem;
 }
 
-header .list{
+header .list,
+footer {
   background-color: #3a3a3a;
   color: lightgray;
+}
+
+footer {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
 }
 
 header .list .item {

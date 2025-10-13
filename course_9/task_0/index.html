@@ -15,16 +15,21 @@
       <h2>Search form</h2>
 
       <form action="./search.html" method="get">
-        <label for="query">Search query</label>
-        <input type="text" id="query" required placeholder="Enter your search" name="search-text">
 
-        <label for="category">Choose a category</label>
-        <select id="category" name="category">
-          <option value="all">All</option>
-          <option value="article">Article</option>
-          <option value="products">Products</option>
-          <option value="users">Users</option>
-        </select>
+        <div class="formRow">
+          <label for="query">Search query</label>
+          <input type="text" id="query" required placeholder="Enter your search" name="search-text">
+        </div>
+
+        <div class="formRow">
+          <label for="category">Choose a category</label>
+          <select id="category" name="category">
+            <option value="all">All</option>
+            <option value="article">Article</option>
+            <option value="products">Products</option>
+            <option value="users">Users</option>
+          </select>
+        </div>
 
         <button type="submit">Search</button>
       </form>
@@ -35,14 +40,83 @@
 
       <form action="./profile.html" method="post">
         <fieldset>
+
           <legend>Log in</legend>
-          <label for="username">Username</label>
-          <input type="text" name="username" required placeholder="Enter your username" id="username">
-          <label for="password">Password</label>
-          <input type="password" name="password" required placeholder="Enter your password" id="password">
+
+          <div class="formRow">
+            <label for="username">Username</label>
+            <input type="text" name="username" required placeholder="Enter your username" id="username">
+          </div>
+
+          <div class="formRow">
+            <label for="password">Password</label>
+            <input type="password" name="password" required placeholder="Enter your password" id="password">
+          </div>
+          
+          <div class="formRow">
+            <label for="note">Note</label> 
+            <textarea name="note" placeholder="Leave a note" rows="10" id="note"></textarea>     
+          </div>
+
           <button type="submit">Log in</button>
         </fieldset>
       </form>
+    </section>
+    
+    <section>
+      <form action="./search.html" method="post" class="advanced">
+        <div class="formRow">
+          <label for="registerName">Username</label> 
+          <input type="text" name="registerName" id="registerName" required>
+        </div>
+        <div class="formRow">
+          <label for="registerPass">Password</label> 
+          <input type="password" name="registerPass" id="registerPass" required>
+        </div>
+        <div class="formRow">
+          <label for="registerAge">Age</label> 
+          <input type="number" name="registerAge" min="1" max="120" id="registerAge">
+        </div>
+        <div class="formRow">
+           <label for="registerMail">Email</label> 
+          <input type="email" name="registerMail" id="registerMail" required>
+        </div>
+        <div class="formRow">
+          <fieldset>
+            <legend>Gender</legend>
+            <label for="male" class="check">Male
+              <input type="radio" name="gender" value="male" id="male">
+            </label>
+            <label for="female" class="check">Female
+              <input type="radio" id="female" name="gender" value="female">
+            </label>
+            <label for="other" class="check">Other
+              <input type="radio" id="other" name="gender" value="other">
+            </label>
+          </fieldset>
+        </div>
+
+        <div class="formRow">
+          <fieldset>
+             <legend>Hobbies</legend>
+            <label class="check">
+            Reading
+              <input type="checkbox" name="hobbies" value="reading">
+            </label>
+             <label class="check">
+            Music
+              <input type="checkbox" name="hobbies" value="music">
+            </label>
+            <label class="check">
+            Sports
+              <input type="checkbox" name="hobbies" value="sports">
+            </label>
+          </fieldset> 
+        </div>
+        <button type="submit">Submit</button>
+        <button type="reset">Cancel</button>
+      </form>
+
     </section>
 
   </body>
