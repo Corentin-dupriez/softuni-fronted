@@ -85,13 +85,13 @@
           <fieldset>
             <legend>Gender</legend>
             <label for="male" class="check">Male
-              <input type="radio" name="gender" value="male" id="male">
+              <input required type="radio" name="gender" value="male" id="male">
             </label>
             <label for="female" class="check">Female
-              <input type="radio" id="female" name="gender" value="female">
+              <input required type="radio" id="female" name="gender" value="female">
             </label>
             <label for="other" class="check">Other
-              <input type="radio" id="other" name="gender" value="other">
+              <input required type="radio" id="other" name="gender" value="other">
             </label>
           </fieldset>
         </div>
@@ -112,12 +112,28 @@
               <input type="checkbox" name="hobbies" value="sports">
             </label>
           </fieldset> 
+          </div>
+          <div class="formRow">
+            <label for="country">Country</label>
+            <select name='country' id="country" required>
+              <option value="" disable selected>Choose your country</option>
+              <option value="BG">Bulgaria</option> 
+              <option value="UK">UK</option>
+              <option value="USA">USA</option>
+              <option value="DE">Germany</option>
+            </select>
+          </div>
+
+          <div class="formRow">
+            <label for="phone">Phone</label> 
+            <input type="telephone" name="phone" id="phone" disabled>
+          </div>
+        <div class="buttonWrapper">
+          <button type="submit">Submit</button>
+          <button type="reset">Cancel</button>
         </div>
-        <button type="submit">Submit</button>
-        <button type="reset">Cancel</button>
       </form>
 
     </section>
-
   </body>
 </html>

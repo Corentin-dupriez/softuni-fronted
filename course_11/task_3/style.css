@@ -1,0 +1,239 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  background-color: black;
+  overflow: hidden;
+  flex-direction: column;
+  height: 600px;
+}
+
+.upperBar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 3rem;
+  justify-content: space-between;
+  position: relative;
+  top: -600px;
+  right: 0;
+  margin: 1.5rem 2rem;
+  color: white;
+}
+
+.upperBar .logo {
+  height: 2rem;
+}
+
+.imgContainer {
+  height: 600px;
+  width: 100%;
+}
+
+.img {
+  aspect-ratio: 16/9;
+  opacity: 0.6;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.upperBar ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  gap: 2rem ;
+  font-family: "Karla";
+}
+
+.hero {
+  position: relative;
+  top: -500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero h1 {
+  margin: 6rem auto;
+  font-family: "Cormorant Infant";
+  font-size: 3rem;
+  color: white;
+  font-size: 4rem;
+}
+
+.hero .text {
+  color: white;
+  font-family: "Karla";
+  width: 40%;
+  text-align: center;
+}
+
+.testimonials {
+  background-color: #F8F0E9;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 1.5rem 5rem 1.5rem 5rem;
+}
+
+.testimonials .testimonial {
+  margin: 1.5rem 8rem 1.5rem 8rem;
+}
+
+.testimonials h4 {
+  font-family: "Karla";
+  font-weight: 200;
+  color: #3A3A3A;
+}
+
+.testimonials p {
+  font-size: 3.75rem;
+  font-family: "Cormorant Infant";
+  font-style: italic;
+  font-weight: 500;
+  margin: 4rem 0;
+}
+
+.support {
+  background-color: #E14747;
+  display: flex;
+  flex-direction: column;
+  padding: 4rem;
+  gap: 3rem;
+}
+
+.support .text {
+  color: white;
+  margin: auto;
+  font-family: "Karla";
+}
+
+.support .text.supportTimes {
+  font-weight: bold;
+}
+
+.articles {
+  background-color: #F8F0E9;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.articles article {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.articles .title {
+  font-family: "Cormorant Infant";
+  font-size: 2.5rem;
+  font-weight: 300;
+  text-align: center;
+  margin: 3rem auto; 
+}
+
+.articleImgContainer {
+  width: 400px;
+  height: 300px;
+  margin: auto;
+}
+
+.articleImgContainer .articleImg {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.articles .text {
+  font-family: "Karla";
+  font-weight: 200;
+  color: #3A3A3A;
+}
+
+.articles article .btn {
+  align-self: start;
+}
+
+.btn {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 0.25rem;
+  padding: 0.5rem 1.5rem;
+  margin: 3rem 0;
+}
+
+.callToAction {
+  background-color: #E14747;
+  color: white;
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.callToAction .title {
+  font-family: "Cormorant Infant";
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin: auto;
+}
+
+.callToAction .text {
+  margin: auto;
+  width: 65%;
+  text-align: center;
+  font-family: "Karla";
+}
+
+.callToAction .mainBtn {
+  margin: 1rem auto;
+  padding: 0.75rem 1rem;
+  background-color: #FAD87A;
+  font-family: "Karla";
+  font-size: 0.75rem;
+  border: none;
+  border-radius: 2rem;
+}
+
+footer {
+  background-color: #352B2A;
+  padding: 2rem 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+footer .logo {
+  height: 2rem;
+  width: 3.5rem;
+}
+
+footer .text {
+  color: white;
+  font-family: "Karla";
+  width: 40%;
+}
+
+footer .copyrights {
+  color: #5F4F48;
+  font-family: "Karla";
+  font-size: 0.75rem;
+}
