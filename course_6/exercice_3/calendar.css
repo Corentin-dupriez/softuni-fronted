@@ -1,0 +1,43 @@
+body {
+  background-color: #EEEEEE ;
+}
+
+.calendar {
+  background-color: white;
+  display: flex;
+}
+
+.calendar .days {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 2;
+}
+
+.calendar .notes {
+  flex-grow: 1;
+}
+
+.calendar .days .workweek ,
+.calendar .days .weekend{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.calendar .days .row {
+  display: flex;
+  flex-direction: row;
+}
+
+.calendar .days .day {
+  padding: 1rem;
+  border: 1px solid #EEEEEE;
+  flex-grow: 1;
+}
+
+.calendar .notes .reminders,
+.calendar .notes .specialDates {
+  border: 1px solid #EEEEEE;
+  padding: 2.75rem 1rem;
+  text-align: center;
+}

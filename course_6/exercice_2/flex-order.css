@@ -1,0 +1,57 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #EEEEEE ;
+}
+
+.main,
+.mainReverse {
+  background-color: white;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 1rem;
+  box-shadow: 0 5px 4px rgba(0,0,0, 0.2);
+}
+
+
+.main div,
+.mainReverse div{
+  border: 1px solid black;
+  padding: 1rem;
+}
+
+.main .body,
+.mainReverse .body {
+  display: flex;
+  border: none;
+  gap: 1rem;
+  padding: 0;
+}
+
+.main .body .mainContent,
+.mainReverse .body .mainContent {
+  flex-grow: 2;
+  order: 1;
+}
+
+.mainReverse .body .mainContent {
+  order: 2;
+}
+
+.main .body .sidebar,
+.mainReverse .body .sidebar {
+  flex-grow: 1;
+  order: 2;
+}
+
+.mainReverse .body .sidebar {
+  order: 1;
+}

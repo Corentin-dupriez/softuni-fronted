@@ -1,0 +1,32 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+}
+
+.navbar {
+  margin: 1rem;
+  display: flex;
+  background-color: #EEEEEE ;
+  box-shadow: 0px 5px 4px rgba(0,0,0,0.2);
+  padding: 0.5rem;
+}
+
+.navbar .nav {
+  display: flex;
+  list-style: none ;
+  gap: 1rem;
+}
+
+.navbar .nav li {
+  background-color: white;
+  color: orange;
+  border: 1px solid lightgray;
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.75rem;
+}
