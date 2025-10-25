@@ -1,0 +1,43 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.buttons {
+  margin: 2rem;
+}
+
+.buttons h2 {
+  margin-bottom: 1rem;
+}
+
+.btn {
+  text-decoration: none;
+  color: black;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  font-family: "Arial", sans-serif;
+}
+
+.btnGrey {
+  background-color: #D8D8D8;
+}
+
+.btnOrange {
+  background-color: #FF9B00 ;
+}
+
+.btnYellow {
+  background-color: #F9F9CC;
+  border: 1px solid lightgray;
+}
+
+.btnWhite {
+  background-color: white;
+  border: 1px solid black;
+}

@@ -1,0 +1,46 @@
+@media screen and (max-width: 600px) {
+  nav {
+    flex-direction: row-reverse;
+  }
+  .checkbtn {
+    display: inline;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  .site-header {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .site-header > i,
+  h1 {
+    left: 0;
+    bottom: 0;
+  }
+
+  .about {
+    display: flex;
+  }
+
+  .about-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    bottom: 0;
+  }
+
+  .gallery {
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .gallery-item {
+    width: 40%;
+  }
+}

@@ -1,0 +1,29 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-family: "Arial", sans-serif;
+  font-size: 1.25rem;
+  margin: 1rem;
+}
+
+.icons {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem;
+}
+
+.icon {
+  background-color: #EBEBEB;
+  padding: 0.75rem;
+  border-radius: 100%;
+}
+
+.icon i {
+  font-size: 1rem;
+}

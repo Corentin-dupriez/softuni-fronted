@@ -1,0 +1,284 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.header {
+  background-color: #C1BBBB;
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 0;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  align-self: center;
+  gap: 1rem;
+  padding: 0.25rem 0.25rem;
+
+}
+
+.logo .title {
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  margin-left: 0.25rem;
+  background-color: #57A390;
+  color: white;
+  font-family: "Oleo Script", serif;
+}
+
+.logo .titleComplement {
+  align-self: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.75rem;
+}
+
+.header .nav .navMenu {
+  display: flex;
+  list-style-type: none;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.header .nav .navMenu .navItem {
+  font-family: "Open Sans", sans-serif;
+  padding: 0.25rem 0.75rem;
+}
+
+.header .nav .navMenu .navItem.active {
+  background-color: #454545; 
+  border-radius: 0.25rem;
+  color: white;
+
+} 
+
+.callToAction {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2rem 4rem;
+  font-family: "Open Sans", sans-serif;
+  color: #444444;
+}
+
+.callToAction .welcome {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.callToAction .welcome h2 {
+  font-size: 3rem;
+}
+
+.callToAction .welcome h4 {
+  font-weight: 200;
+  font-size: 1.5rem;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
+  width: 200px;
+}
+
+.mainBtn {
+  border: none;
+  border-radius: 0.25rem;
+  background-color: #0690C5;
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  text-align: left;
+}
+
+.btn {
+  border: none; 
+  font-weight: bold;
+  text-align: left;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+.articles {
+  background-color: #C1BBBB;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  padding: 5rem 0;
+}
+
+.article {
+  background-color: white;
+  border-radius: 0.25rem;
+  width: 60%;
+  overflow: hidden;
+}
+
+.article .imgContainer {
+  width: 100%;
+}
+
+.article .imgContainer img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.article .articleContent {
+  font-family: "Open Sans", sans-serif;
+  color: #444444;
+  padding: 0 2rem;
+}
+
+.article .articleContent h5 {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+
+.article .articleContent .subtitle {
+}
+
+.article .articleContent .text {
+  margin: 2rem 0;
+}
+
+.information {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+  align-items: stretch;
+  padding: 2rem 1rem;
+  gap: 2rem;
+}
+
+.interestingStuff, 
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  min-height: 450px;
+}
+
+.information .interestingStuff .title {
+  color: #444444
+}
+
+.information .interestingStuff .imgGallery {
+  display: flex;
+  flex-direction: row; 
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.information .interestingStuff .imgGallery img {
+  object-fit: cover;
+  width: 40%;
+  flex-grow: 1;
+  border-radius: 0.25rem;
+}
+
+.information .interestingStuff .mainBtn {
+  width: 100px;
+  margin: 2rem 0;
+}
+
+.information .about {
+  flex: 2;
+}
+
+.information .about .title {
+  color: #444444;
+}
+
+.information .about .text {
+  padding: 2rem 0;
+}
+
+.information .about .mainBtn {
+  margin: 2rem 0;
+  align-self: flex-start;
+}
+
+footer {
+  background-color: #C1BBBB;
+  display: flex;
+  gap: 5rem;
+  padding: 2rem 1rem;
+}
+
+footer > .links {
+  display: flex;
+  flex-direction: column;
+}
+
+footer > .links a {
+  color: #444444;  
+  margin: 0.5rem 0;
+}
+
+footer h4 {
+  margin-bottom: 1rem;
+}
+
+footer .contacts .links {
+  display: flex;
+  flex-direction: row;
+  gap: 0.25rem;
+}
+
+footer .contacts .text {
+  color: #444444;
+  margin: 1rem 0;
+}
+
+footer .contacts .links .link {
+  width: 2rem;
+  height: 2rem;
+  background-color: #444444;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.25rem;
+}
+
+footer .contacts .links a {
+  color: white;
+}
+
+@media screen and (min-width: 600px) {
+ .articles {
+   flex-direction: row;
+   padding: 2rem 1rem;
+   min-width: 300px;
+   gap: 1rem;
+ } 
+
+ .article .articleContent h5 {
+    font-size: 1.25rem;
+ }
+}
+
+@media screen and (min-width: 1200px) {
+  
+}

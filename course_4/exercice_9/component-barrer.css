@@ -1,0 +1,35 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.hero {
+  min-height: 800px;
+  width: 100vw;
+  position: relative;
+}
+
+.imageContainer {
+  width: 100%;
+  object-fit: cover;
+}
+
+.hero .text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-family: "Arial", sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+}
+
+.hero .text .subtitle {
+  font-weight: normal;
+}

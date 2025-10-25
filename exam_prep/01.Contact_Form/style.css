@@ -1,0 +1,88 @@
+*, 
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  display: flex;
+  padding: 5rem;
+}
+
+.formDiv {
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+}
+
+.text {
+  font-family: "Source Sans 3", sans-serif;
+  text-transform: uppercase;
+  color: #585858;
+}
+
+.formDiv .form .fields {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 1rem 0;
+}
+
+.formDiv .form .fields input {
+  border: none;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 0.75rem;
+  border-bottom: 1px solid lightgray;
+  width: 40%;
+  padding-bottom: 0.5rem;
+  flex-grow: 1;
+  transition: 300ms ease-in-out;
+}
+
+
+.formDiv .form .btn {
+  background-color: #585858;
+  border: none;
+  margin: 0.5rem 0;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  text-transform: uppercase;
+}
+
+.copyrights {
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  color: darkgray;
+}
+
+.copyrights a {
+  color: #585858;
+}
+
+.follow .text {
+  padding-left: 1rem;
+}
+
+.follow .socialMediaLinks {
+  display: grid;
+  grid-template-columns: repeat(4, 40px);
+  gap: 4px;
+  padding: 0.5rem 1rem;
+}
+
+.follow .socialMediaLinks .socialMediaBtn {
+  display: flex;
+  border: 1px solid #585858;
+  padding: 0.5rem 0.75rem;
+  align-items: center;
+  border-radius: 0.25rem; 
+}
+
+.follow .socialMediaLinks .socialMediaBtn i {
+  color: #585858;
+}
